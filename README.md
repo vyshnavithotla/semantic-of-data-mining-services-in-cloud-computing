@@ -29,8 +29,8 @@ The dataset is included in this repo at `dataset/diabetes.csv`.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/vyshnavithotla/semantics-data-mining-cloud.git
-   cd semantics-data-mining-cloud
+   git clone https://github.com/vyshnavithotla/semantic-of-data-mining-services-in-cloud-computing.git
+   cd semantic-of-data-mining-services-in-cloud-computing
    ```
 
 2. **Install dependencies**
@@ -48,6 +48,14 @@ The dataset is included in this repo at `dataset/diabetes.csv`.
    - Click **"Preprocess Dataset"** → view train/test split info
    - Click **"Train Random Forest Algorithm"** → view model accuracy
    - Click **"Start Cloud Server & Publish CCDM Service"** → starts listening for prediction requests on port 5000
+5. **Testing the Cloud Server**
+
+   - Run `python main.py` and click the buttons in order: Upload → Preprocess → Train → Start Cloud Server.
+   - Open a second terminal in the project folder and run:
+   ```bash
+   python client.py
+   ```
+  `client.py` sends 5 sample patients to the server. Each prediction appears in the terminal and in the app's text box (1 = diabetes, 0 = no diabetes).
 
 ## Result
 
